@@ -1,6 +1,5 @@
-@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
-/* @import url(../fonts/TripSans-Medium.ttf);
-@import url(../fonts/TripSans-Regular.ttf); */
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+@import url("./fonts.css");
 body {
   width: 1280px;
   margin: 0 auto;
@@ -14,7 +13,7 @@ header {
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
-  font-family: "TripSans-Regular";
+  font-family: "Trip Sans Reg";
 }
 header > img {
   height: 100%;
@@ -23,7 +22,7 @@ header > img {
 header > div {
   height: 100%;
   width: 350px;
-  margin-left: 30px;
+  margin-left: 22px;
   border-radius: 20px;
   border: lightgrey solid 2px;
   display: flex;
@@ -37,8 +36,8 @@ header > div > i {
 .nav-bar {
   display: flex;
   align-items: center;
-  margin: 0 30px;
-  gap: 30px;
+  margin: 0 22px;
+  gap: 22px;
   align-content: center;
 }
 .nav-bar a {
@@ -48,7 +47,7 @@ header > div > i {
 .nav-bar > a > i {
   margin: 0 10px;
 }
-.nav-bar :nth-child(4) {
+button {
   height: 40px;
   width: 150px;
   background-color: black;
@@ -57,3 +56,50 @@ header > div > i {
 }
 
 /*-------Main------*/
+main {
+  margin: 30px 24px;
+  border: black solid 2px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-family: "Trip Sans Med";
+  font-size: 50px;
+}
+h1 > span {
+  color: #ff5e5e;
+}
+
+.catching-phrase > p,
+.catching-phrase > p > a {
+  color: rgb(61, 61, 61);
+  font-family: "Trip Sans Reg";
+  font-size: 13px;
+}
+
+.menu {
+  margin: 24px 0;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  border: black solid 1px;
+}
+.menu > a {
+  border: black solid 1px;
+  width: 180px;
+  height: 66px;
+  border-radius: 10px;
+  padding-left: 13px;
+  padding-right: 13px; /*ici*/
+  font-family: "Trip Sans Reg";
+  text-decoration: none;
+  color: black;
+
+  display: flex;
+  justify-content: space-between;
+}
+.menu > a > i {
+  padding-top: 7px;
+}
