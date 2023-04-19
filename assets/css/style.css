@@ -1,5 +1,6 @@
 @import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
-
+/* @import url(../fonts/TripSans-Medium.ttf);
+@import url(../fonts/TripSans-Regular.ttf); */
 body {
   width: 1280px;
   margin: 0 auto;
@@ -7,21 +8,22 @@ body {
 /*-------Headers------*/
 
 header {
-  margin: 10px 24px;
+  margin: 13px 24px;
   height: 40px;
-  border: black solid 2px;
+  /* border: black solid 2px; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  font-family: "TripSans-Regular";
 }
 header > img {
   height: 100%;
-  border: red solid 1px;
 }
 
 header > div {
   height: 100%;
-  width: 230px;
+  width: 350px;
+  margin-left: 30px;
   border-radius: 20px;
   border: lightgrey solid 2px;
   display: flex;
@@ -30,7 +32,28 @@ header > div {
 }
 
 header > div > i {
-  height: 60px;
-  color: aqua;
   margin: 15px;
 }
+.nav-bar {
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+  gap: 30px;
+  align-content: center;
+}
+.nav-bar a {
+  color: black;
+  text-decoration: none;
+}
+.nav-bar > a > i {
+  margin: 0 10px;
+}
+.nav-bar :nth-child(4) {
+  height: 40px;
+  width: 150px;
+  background-color: black;
+  border-radius: 30px;
+  color: whitesmoke;
+}
+
+/*-------Main------*/
