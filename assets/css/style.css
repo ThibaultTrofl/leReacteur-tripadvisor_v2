@@ -1,0 +1,36 @@
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+
+body {
+  width: 1280px;
+  margin: 0 auto;
+}
+/*-------Headers------*/
+
+header {
+  margin: 10px 24px;
+  height: 40px;
+  border: black solid 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header > img {
+  height: 100%;
+  border: red solid 1px;
+}
+
+header > div {
+  height: 100%;
+  width: 230px;
+  border-radius: 20px;
+  border: lightgrey solid 2px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header > div > i {
+  height: 60px;
+  color: aqua;
+  margin: 15px;
+}
