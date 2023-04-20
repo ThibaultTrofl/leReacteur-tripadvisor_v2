@@ -145,21 +145,25 @@ h1 > span {
   border: rgb(255, 5, 5) solid 1px;
   display: flex;
   height: 200px;
+  gap: 10px;
 }
 .se-divertir {
   height: 100%;
-  width: 270px;
+  width: 280px;
   border: rgb(255, 5, 5) solid 1px;
+  flex: 1;
 }
 
 .caroussel-img {
   display: flex;
   flex-direction: row;
-  flex-shrink: 0;
-  position: relative;
+  gap: 15px;
+  flex: 3;
+  overflow: hidden;
+  overflow-x: scroll;
 }
-.col {
-  width: calc((100% - 30px) / 3);
+.col > img {
+  /* width: calc((100% - 30px) / 3); */
   height: 100%;
   object-fit: cover;
 }
