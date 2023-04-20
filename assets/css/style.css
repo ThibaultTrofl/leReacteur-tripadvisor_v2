@@ -64,7 +64,7 @@ main {
   margin: 30px 24px;
   /* border: black solid 2px; */
 }
-
+/*-----*Raccourci*--*/
 h1 {
   margin-bottom: 15px;
   font-family: "Trip Sans Med";
@@ -86,7 +86,7 @@ h1 > span {
   height: 66px;
   display: flex;
   gap: 20px;
-
+  padding: 24px 0;
   align-items: center;
   /* border: black solid 1px; */
 }
@@ -107,7 +107,7 @@ h1 > span {
 .menu > a > i {
   padding-top: 7px;
 }
-
+/*-----*Mosaic*--*/
 .mosaic {
   display: flex;
   height: 450px;
@@ -130,6 +130,39 @@ h1 > span {
   object-fit: cover;
 }
 
+/*-----*Caroussel*--*/
+
+.caroussel {
+  border: black solid 1px;
+  margin-top: 24px;
+}
+.caroussel > h2 {
+  font-family: "Trip Sans Med";
+  font-size: xx-large;
+  margin-bottom: 15px;
+}
+.les-immanquables {
+  border: rgb(255, 5, 5) solid 1px;
+  display: flex;
+  height: 200px;
+}
+.se-divertir {
+  height: 100%;
+  width: 270px;
+  border: rgb(255, 5, 5) solid 1px;
+}
+
+.caroussel-img {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  position: relative;
+}
+.col {
+  width: calc((100% - 30px) / 3);
+  height: 100%;
+  object-fit: cover;
+}
 /*-------Footer------*/
 footer {
   background-color: #faf1ed;
